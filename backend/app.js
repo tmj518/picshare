@@ -30,3 +30,5 @@ async function initializeApp() {
 }
 
 initializeApp(); 
+const uploadRouter = require('./routes/upload');
+app.use('/', uploadRouter); // 或 app.use('/upload', uploadRouter);
